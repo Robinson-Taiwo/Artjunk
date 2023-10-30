@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.Navbar-container {
+    @apply w-[100vw] flex flex-row justify-between pl-[2rem] pr-[1.81rem] pt-[2rem]
+}
+
+.navbar-item {
+    @apply text-white text-[1.125rem] font-medium
+}
+
+.navbar-button {
+    width: 9.5625rem;
+    height: 2.625rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-radius: 0.625rem;
+    border: 2px solid #FFF;
+    @apply flex items-center justify-center text-white text-[1.125rem] font-medium
+}
+
+.navbar-menu {
+    @apply hidden
+}
+
+.navbar-mobile-menu {
+    @apply w-[95vw] bg-[#685757] h-[100vh] absolute top-[0] right-0 text-[black] flex flex-col gap-[1rem] pl-[2rem] pt-[2rem]
+}
+
+.close-icon {
+    @apply h-[1rem] w-[1rem] tablet:hidden relative
+}
+
+.close-menu-div {
+    @apply flex items-end justify-end pr-[2rem]
+}
+
+.overlay-open {
+    overflow: hidden;
+}

@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+
+.Home {}
+
+.home-background {
+    /* opacity: 0.5; */
+    /* background: #212121; */
+    background-image: url(../assets/Images/Background.png);
+    @apply h-fit bg-center bg-cover bg-no-repeat
+}
+
+
+.overlay {
+    background-image: url(../assets/Images/overlay.png);
+    @apply h-[100%] pb-[19.38rem]
+}
+
+.home-main-section {
+    @apply pt-[10.5rem] w-[100%] pl-[2rem] pr-[1.21rem]
+}
+
+.long-rectangle {
+    @apply bg-white w-[5.625rem] h-[0.9375rem]
+}
+
+.body-headers {
+    @apply flex flex-col gap-[2rem]
+}
+
+.big-heading {
+
+    @apply w-[100%] font-normal leading-normal text-[3.125rem] text-white
+}
+
+.home-sub-heading {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    @apply w-[100%] text-white text-[1.25rem] font-medium leading-[168.523%]
+}
+
+.learn-more-button {
+    border: 2px solid #FFF;
+    @apply w-[9.5625rem] h-[2.325rem] rounded-[0.625rem] text-white flex justify-center items-center text-[1.125rem] font-medium
+}
+
+.second-section {
+    @apply pt-[4.88rem] flex items-center flex-col
+}
+
+.newest-reads {
+    @apply text-[1.5rem] font-bold text-black mb-[4.88rem]
+}
