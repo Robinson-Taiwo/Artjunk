@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
-    overflow: hidden;
 }
 
 .Navbar-container {
@@ -23,15 +22,16 @@
 }
 
 .navbar-menu {
-    @apply hidden
+    @apply hidden desktop:flex desktop:flex-row wide:gap-[2.19rem] desktop:gap-[1.19rem]
 }
 
 .navbar-mobile-menu {
-    @apply w-[95vw] bg-[#685757] h-[100vh] absolute top-[0] right-0 text-[black] flex flex-col gap-[1rem] pl-[2rem] pt-[2rem] tablet:fixed
+    z-index: 1000; /* Set a higher z-index value */
+    @apply w-[95vw] bg-[#685757] h-[100vh] absolute top-[0] right-0 text-[black] flex flex-col gap-[1rem] pl-[2rem] pt-[2rem] phone:fixed desktop:hidden
 }
 
 .close-icon {
-    @apply h-[1rem] w-[1rem] tablet:hidden relative
+    @apply h-[1rem] w-[1rem] desktop:hidden relative
 }
 
 .close-menu-div {
@@ -40,4 +40,8 @@
 
 .overlay-open {
     overflow: hidden;
+}
+
+.menu-icon{
+    @apply desktop:hidden
 }

@@ -56,11 +56,11 @@
 }
 
 .blog-inner{
-    @apply flex flex-col items-center 
+    @apply flex flex-col items-center tablet:items-start 
 }
 
 .blogs-cards{
-    @apply flex flex-col items-center tablet:grid tablet:grid-cols-3 tablet:gap-[1.25rem]
+    @apply flex flex-col items-center tablet:grid tablet:grid-cols-3 w-[100%]
 }
 .overlay-open {
     overflow: hidden;

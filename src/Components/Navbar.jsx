@@ -9,26 +9,24 @@ import "./Navbar.css"
 const Navbar = () => {
 
   const [openMenu, setOpenMenu] = useState(false)
+  const [bodyOverflow, setBodyOverflow] = useState('auto'); // 'auto' allows scrolling
+
 
   const toggleMenu = () => {
     setOpenMenu(!openMenu)
+    setBodyOverflow(openMenu ? 'auto' : 'hidden');
+
   }
 
 
   useEffect(() => {
-    if (openMenu) {
-      // Add the class to the body when the modal is open
-      document.body.classList.add('overlay-open');
-    } else {
-      // Remove the class when the modal is closed
-      document.body.classList.remove('overlay-open');
-    }
+    document.body.style.overflow = bodyOverflow;
 
-    // Clean up the effect
+    // Cleanup the effect when the component unmounts
     return () => {
-      document.body.classList.remove('overlay-open');
+      document.body.style.overflow = 'auto'; // Reset to default
     };
-  }, [openMenu]);
+  }, [bodyOverflow]);
 
 
   return (

@@ -1,13 +1,15 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from './Navbar'
 import data from './data'
 import BlogCard from './BlogCard'
 import "./Home.css"
 
 const Home = () => {
+    const [openMenu, setOpenMenu] = useState(false);
+
     return (
-        <div className="Home">
+        <div className={`Home ${openMenu ? 'overlay-open' : ''}`}>
 
 
             <div className="home-background">
@@ -59,13 +61,13 @@ const Home = () => {
 
                 <div className="blogs-cards">
 
-                {data.map(items => {
-                    return (
-                        <div className='blog-inner' key={items.id} >
-                            <BlogCard pic={items.image} id={items.id} date={items.date} title={items.desc} />
-                        </div>
-                    )
-                })}
+                    {data.map(items => {
+                        return (
+                            <div className='blog-inner' key={items.id} >
+                                <BlogCard pic={items.image} id={items.id} date={items.date} title={items.desc} />
+                            </div>
+                        )
+                    })}
                 </div>
 
 
