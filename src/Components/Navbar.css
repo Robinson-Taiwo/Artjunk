@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0%;
+    overflow: hidden;
 }
 
 .Navbar-container {
@@ -26,7 +27,7 @@
 }
 
 .navbar-mobile-menu {
-    @apply w-[95vw] bg-[#685757] h-[100vh] absolute top-[0] right-0 text-[black] flex flex-col gap-[1rem] pl-[2rem] pt-[2rem]
+    @apply w-[95vw] bg-[#685757] h-[100vh] absolute top-[0] right-0 text-[black] flex flex-col gap-[1rem] pl-[2rem] pt-[2rem] tablet:fixed
 }
 
 .close-icon {

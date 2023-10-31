@@ -54,11 +54,14 @@
 .newest-reads {
     @apply text-[1.5rem] font-bold text-black mb-[4.88rem]
 }
-/* 
+
 .blog-inner{
-    @apply flex flex-col items-center tablet:grid tablet:grid-cols-3
-} */
+    @apply flex flex-col items-center 
+}
 
 .blogs-cards{
     @apply flex flex-col items-center tablet:grid tablet:grid-cols-3 tablet:gap-[1.25rem]
 }
+.overlay-open {
+    overflow: hidden;
+  }
