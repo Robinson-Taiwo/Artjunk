@@ -59,7 +59,7 @@ const Home = () => {
 
                 {data.map(items => {
                     return (
-                        <div key={items.id} >
+                        <div className='blog-inner' key={items.id} >
                             <BlogCard pic={items.image} id={items.id} date={items.date} title={items.desc} />
                         </div>
                     )

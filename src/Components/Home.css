@@ -48,9 +48,13 @@
 }
 
 .second-section {
-    @apply pt-[4.88rem] flex items-center flex-col
+    @apply pt-[4.88rem] flex items-center flex-col justify-center w-[100%]   
 }
 
 .newest-reads {
     @apply text-[1.5rem] font-bold text-black mb-[4.88rem]
+}
+
+.blog-inner{
+    @apply flex flex-col items-center 
 }

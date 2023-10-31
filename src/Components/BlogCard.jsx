@@ -14,7 +14,7 @@ const BlogCard = ({ id, pic, date, title }) => {
   return (
     <div className='blog'>
 
-      <img className='blogCard-image' src={`src/assets/Images/${pic}.png`} alt="" />
+      <img className='blogCard-image' src={venice} alt="" />
 
       <div className="blog-second-section">
 

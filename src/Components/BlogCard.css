@@ -1,5 +1,5 @@
 .blog {
-    @apply w-[19.4375rem] mb-[2rem]
+    @apply w-[19.4375rem] mb-[2rem] sphone:w-[80%]
 }
 
 .blogCard-image {
@@ -17,9 +17,9 @@
 }
 
 .blog-title {
-    @apply text-black text-[1.25rem] font-bold w-[15.437rem]
+    @apply text-black text-[1.25rem] font-bold w-[15.437rem] sphone:w-[100%]
 }
 
 .read-more-div {
-    @apply w-[100%] flex justify-end pr-[2rem]
+    @apply w-[100%] flex justify-end pr-[2rem] mt-[1rem]
 }

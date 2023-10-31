@@ -7,10 +7,11 @@ export default {
   theme: {
     extend: {
       screens: {
-        'phone': '320px',     // Custom breakpoint for mobile
-        'tablet': '640px',     // Custom breakpoint for tablet
-        'desktop': '1024px',   // Custom breakpoint for desktop
-        'wide': '1280px',      // Custom breakpoint for wide screens
+        'sphone': { 'max': '320px' },
+        'phone': '320px',
+        'tablet': '640px',
+        'desktop': '1024px',
+        'wide': '1440px',
       },
     },
   },

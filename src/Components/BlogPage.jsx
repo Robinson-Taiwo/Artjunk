@@ -1,7 +1,10 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import data from './data';
+import picaso from "../assets/Images/picaso.png"
+
 import { useNavigate, useParams } from 'react-router-dom';
+import "./BlogPage.css"
 
 const BlogPage = () => {
 
@@ -15,8 +18,12 @@ const BlogPage = () => {
     return <div>Blog not found.</div>;
   }
   return (
-    <div>
-      <h1>{blog.desc}</h1>
+    <div className='BlogPage' >
+
+      <img src={picaso} alt="" className="blogPage-image" />
+
+      <h1 className='blogpage-desc' >{blog.desc}</h1>
+      <h1 className='blogpage-date' >{blog.date}</h1>
       {/* Additional rendering of the blog content */}
     </div>)
 }
