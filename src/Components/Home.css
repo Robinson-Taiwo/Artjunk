@@ -34,12 +34,12 @@
 
 .big-heading {
 
-    @apply w-[100%] font-normal leading-normal text-[3.125rem] text-white
+    @apply w-[100%] font-normal leading-normal text-[3.125rem] text-white tablet:w-[37.5rem]
 }
 
 .home-sub-heading {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    @apply w-[100%] text-white text-[1.25rem] font-medium leading-[168.523%]
+    @apply w-[100%] text-white text-[1.25rem] font-medium leading-[168.523%] tablet:w-[33rem]
 }
 
 .learn-more-button {
@@ -48,13 +48,17 @@
 }
 
 .second-section {
-    @apply pt-[4.88rem] flex items-center flex-col justify-center w-[100%]   
+    @apply pt-[4.88rem] flex items-center flex-col justify-center tablet:items-start w-[100%]   tablet:pl-[4.5rem]
 }
 
 .newest-reads {
     @apply text-[1.5rem] font-bold text-black mb-[4.88rem]
 }
-
+/* 
 .blog-inner{
-    @apply flex flex-col items-center 
+    @apply flex flex-col items-center tablet:grid tablet:grid-cols-3
+} */
+
+.blogs-cards{
+    @apply flex flex-col items-center tablet:grid tablet:grid-cols-3 tablet:gap-[1.25rem]
 }

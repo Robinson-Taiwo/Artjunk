@@ -57,6 +57,8 @@ const Home = () => {
                     Newest reads
                 </h6>
 
+                <div className="blogs-cards">
+
                 {data.map(items => {
                     return (
                         <div className='blog-inner' key={items.id} >
@@ -64,6 +66,8 @@ const Home = () => {
                         </div>
                     )
                 })}
+                </div>
+
 
 
 

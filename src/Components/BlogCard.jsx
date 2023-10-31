@@ -11,8 +11,10 @@ import "./BlogCard.css"
 import { Link } from 'react-router-dom'
 
 const BlogCard = ({ id, pic, date, title }) => {
+  const isLongTitle = title.length > 50; // Adjust the threshold as needed
+
   return (
-    <div className='blog'>
+    <div className={`blog ${isLongTitle ? 'long-title' : ''}`}>
 
       <img className='blogCard-image' src={venice} alt="" />
 
@@ -23,7 +25,7 @@ const BlogCard = ({ id, pic, date, title }) => {
           {date}
         </p>
 
-        <Link to={`/blogs/${id}`} className="blog-title">
+        <Link to={`/blogs/${id}`} className={`blog-title ${isLongTitle ? 'long-title' : ''}`} >
           {title}
         </Link>
 
