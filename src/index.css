@@ -10,13 +10,12 @@
   /* for Internet Explorer, Edge */
   scrollbar-width: none;
   /* for Firefox */
-  overflow-y: scroll;
+  overflow-y: auto;
   /* #1d486a  #458cc3   #ffffff00*/
 }
 
 :root::-webkit-scrollbar {
   display: none;
-  background-color: black
     /* for Chrome, Safari, and Opera */
 }
 

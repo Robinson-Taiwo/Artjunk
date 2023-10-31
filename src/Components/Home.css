@@ -5,7 +5,10 @@
 }
 
 
-.Home {}
+
+.Home {
+    
+}
 
 .home-background {
     /* opacity: 0.5; */
@@ -17,7 +20,7 @@
 
 .overlay {
     background-image: url(../assets/Images/overlay.png);
-    @apply h-[100%] pb-[19.38rem]
+    @apply h-[100%] pb-[19.38rem] desktop:pb-[10rem]
 }
 
 .home-main-section {

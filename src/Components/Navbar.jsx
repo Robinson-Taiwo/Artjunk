@@ -18,6 +18,23 @@ const Navbar = () => {
 
   }
 
+  useEffect(() => {
+    if (openMenu) {
+      // Add the class to the body when the modal is open
+      document.body.classList.add('overlay-open');
+    } else {
+      // Remove the class when the modal is closed
+      document.body.classList.remove('overlay-open');
+    }
+
+    // Clean up the effect
+    return () => {
+      document.body.classList.remove('overlay-open');
+    };
+  }, [openMenu]);
+
+
+
 
   useEffect(() => {
     document.body.style.overflow = bodyOverflow;

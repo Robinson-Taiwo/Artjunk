@@ -2,6 +2,8 @@
 import React from 'react'
 import data from './data';
 import picaso from "../assets/Images/picaso.png"
+import castle from "../assets/Images/castle.png"
+
 
 import { useNavigate, useParams } from 'react-router-dom';
 import "./BlogPage.css"
@@ -20,10 +22,24 @@ const BlogPage = () => {
   return (
     <div className='BlogPage' >
 
-      <img src={picaso} alt="" className="blogPage-image" />
+      <img src={castle} alt="" className="blogPage-image" />
+
+
+
 
       <h1 className='blogpage-desc' >{blog.desc}</h1>
-      <h1 className='blogpage-date' >{blog.date}</h1>
+      <h1 className='blogpage-date' >published on : {blog.date}</h1>
+      <p className="blog-texts">
+        {blog.text}
+      </p>
+      <div className="blog-author-div">
+        <h1 className="blog-author">
+
+          <span className='font-bold font-mono'>Written by: </span>
+          Omoyeni Taiwo
+        </h1>
+      </div>
+
       {/* Additional rendering of the blog content */}
     </div>)
 }

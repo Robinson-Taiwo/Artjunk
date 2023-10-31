@@ -13,3 +13,12 @@
 .blogpage-date{
     @apply font-medium text-[grey] text-[0.85rem]
 }
+
+.blog-texts{
+font-family: fantasy;    
+    @apply text-justify w-[90%] mt-[1rem] first-letter:text-[2rem] first-letter:font-bold  p-[0.75rem] mb-[2rem] rounded-md text-[0.85rem] desktop:text-[1rem]
+}
+
+.blog-author-div{
+    @apply w-[100%] flex justify-end pr-[10%] mb-[3rem] phone:text-[0.9rem] tablet:text-[1.2rem]
+}

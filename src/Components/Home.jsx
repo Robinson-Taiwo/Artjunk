@@ -1,12 +1,38 @@
 /* eslint-disable no-unused-vars */
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
 import data from './data'
 import BlogCard from './BlogCard'
 import "./Home.css"
+import axios from 'axios'
+// import safeBuffer from 'safe-buffer';
+
 
 const Home = () => {
+    // const [buffer, setBuffer] = useState(safeBuffer.Buffer.alloc(10));
+
+
     const [openMenu, setOpenMenu] = useState(false);
+    const [articles, setArticles] = useState([]);
+
+
+    const API_KEY = "a5186a30896b4341a7b4b5bc6fdfa0fb";
+
+
+    // useEffect(() => {
+    //     const fetchArticles = async () => {
+    //         const response = await axios.get(
+    //             `https://newsapi.org/v2/everything?q=ai&apiKey=${API_KEY}`
+    //         );
+
+    //         const articles = response.data.articles;
+
+    //         setArticles(articles);
+    //     };
+
+    //     fetchArticles();
+    // }, []);
+
 
     return (
         <div className={`Home ${openMenu ? 'overlay-open' : ''}`}>
@@ -64,7 +90,7 @@ const Home = () => {
                     {data.map(items => {
                         return (
                             <div className='blog-inner' key={items.id} >
-                                <BlogCard pic={items.image} id={items.id} date={items.date} title={items.desc} />
+                                <BlogCard pic={items.image} id={items.id} date={items.date} title={items.desc} text={items.text} />
                             </div>
                         )
                     })}
